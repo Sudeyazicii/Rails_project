@@ -28,7 +28,7 @@ Things you may want to cover:
 
 1. **Projeyi klonlayın:**
 ```bash
-   git clone [github-url'niz]
+   git clone https://github.com/Sudeyazicii/Rails_project.git
    cd rails_project
 ```
 
