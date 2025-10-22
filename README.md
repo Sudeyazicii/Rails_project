@@ -23,3 +23,34 @@ Things you may want to cover:
 
 * ...
 # Rails_project
+
+## Kurulum
+
+1. **Projeyi klonlayın:**
+```bash
+   git clone [github-url'niz]
+   cd rails_project
+```
+
+2. **Bağımlılıkları yükleyin:**
+```bash
+   bundle install
+```
+
+3. **Veritabanını oluşturun ve tabloları kurun:**
+```bash
+   rails db:create
+   rails db:migrate
+```
+
+4. **Örnek verileri yükleyin:**
+```bash
+   rails db:seed
+```
+
+5. **Sunucuyu başlatın:**
+```bash
+   rails server
+```
+
+6. Tarayıcıda `http://localhost:3000` adresine gidin.
