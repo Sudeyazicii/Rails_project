@@ -10,7 +10,7 @@ class HomeController < ActionController::Base
         <title>Anket Yönetim Sistemi - Modern Anket Platformu</title>
         <style>
           * { margin: 0; padding: 0; box-sizing: border-box; }
-          body { 
+          body {#{' '}
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
@@ -113,7 +113,7 @@ class HomeController < ActionController::Base
             text-align: center;
             padding: 20px;
           }
-          
+      #{'    '}
           /* Skip to content link for accessibility */
           .skip-link {
             position: absolute;
@@ -132,7 +132,7 @@ class HomeController < ActionController::Base
       </head>
       <body>
         <a href="#main-content" class="skip-link">Ana içeriğe geç</a>
-        
+      #{'  '}
         <div class="container">
           <header>
             <h1>📊 Anket Yönetim Sistemi</h1>
@@ -143,7 +143,7 @@ class HomeController < ActionController::Base
               <a href="#hakkinda">Hakkında</a>
             </nav>
           </header>
-          
+      #{'    '}
           <main id="main-content">
             <section id="istatistikler" class="stats" aria-label="İstatistikler">
               <div class="stat-box">
@@ -159,7 +159,7 @@ class HomeController < ActionController::Base
                 <p>Toplam Yanıt</p>
               </div>
             </section>
-            
+      #{'      '}
             <section class="content">
               <h2 id="ozellikler">🎯 Platform Özellikleri</h2>
               <div class="info-box">
@@ -171,16 +171,16 @@ class HomeController < ActionController::Base
               <div class="info-box">
                 <p><strong>✅ Güvenli ve Ölçeklenebilir:</strong> Modern teknolojilerle güvenli veri yönetimi</p>
               </div>
-              
+      #{'        '}
               <h2 id="hakkinda">ℹ️ Hakkında</h2>
               <p style="line-height: 1.8; color: #555;">
-                Bu platform, anket oluşturma ve yönetme işlemlerini kolaylaştırmak için 
-                Rails 8 ile geliştirilmiştir. Kullanıcılar kolayca anket oluşturabilir, 
+                Bu platform, anket oluşturma ve yönetme işlemlerini kolaylaştırmak için#{' '}
+                Rails 8 ile geliştirilmiştir. Kullanıcılar kolayca anket oluşturabilir,#{' '}
                 yanıtlayabilir ve sonuçları analiz edebilir.
               </p>
             </section>
           </main>
-          
+      #{'    '}
           <footer>
             <p>&copy; 2025 Anket Yönetim Sistemi | Tüm Hakları Saklıdır</p>
           </footer>
