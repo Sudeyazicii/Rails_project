@@ -1,4 +1,4 @@
-class Api::SurveysController < ApplicationController
+class Api::V1::SurveysController < ApplicationController
   def index
     surveys = Survey.all
     render json: surveys
