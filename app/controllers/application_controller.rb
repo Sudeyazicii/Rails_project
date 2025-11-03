@@ -4,11 +4,17 @@ class ApplicationController < ActionController::API
   private
 
   def authorize_request
-    # Sadece API endpoint'lerinde kontrol yap
+    # Login endpoint'ini tamamen atla
+    return if request.path == "/api/v1/login"
+    
+    # User create endpoint'ini tamamen atla (public endpoint)
+    return if request.path == "/api/v1/users" && request.post?
+    
+    # Surveys endpoint'ini tamamen atla (public endpoint)
+    return if request.path == "/api/v1/surveys" && request.get?
+    
+    # Diğer API endpoint'lerinde JWT kontrolü yap
     if request.path.start_with?("/api/v1")
-      # /login endpoint'inde JWT kontrolü yapma
-      return if request.path == "/api/v1/login"
-
       header = request.headers["Authorization"]
       token = header.split(" ").last if header
 

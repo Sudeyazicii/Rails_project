@@ -7,14 +7,54 @@ Survey.destroy_all
 Credit.destroy_all
 User.destroy_all
 
-# 5 Kullanıcı
+# 5 Kullanıcı (ŞİFRE EKLENDİ!)
 puts "\n1. Kullanicilar olusturuluyor..."
 users = []
-users << User.create!(name: "Ahmet Yilmaz", email: "ahmet@test.com")
-users << User.create!(name: "Ayse Demir", email: "ayse@test.com")
-users << User.create!(name: "Mehmet Kaya", email: "mehmet@test.com")
-users << User.create!(name: "Fatma Sahin", email: "fatma@test.com")
-users << User.create!(name: "Ali Celik", email: "ali@test.com")
+users << User.create!(
+  name: "Ahmet Yilmaz", 
+  email: "ahmet@test.com",
+  password: "123456",
+  password_confirmation: "123456"
+)
+users << User.create!(
+  name: "Ayse Demir", 
+  email: "ayse@test.com",
+  password: "123456",
+  password_confirmation: "123456"
+)
+users << User.create!(
+  name: "Mehmet Kaya", 
+  email: "mehmet@test.com",
+  password: "123456",
+  password_confirmation: "123456"
+)
+users << User.create!(
+  name: "Fatma Sahin", 
+  email: "fatma@test.com",
+  password: "123456",
+  password_confirmation: "123456"
+)
+users << User.create!(
+  name: "Ali Celik", 
+  email: "ali@test.com",
+  password: "123456",
+  password_confirmation: "123456"
+)
+
+# Cucumber testleri için özel kullanıcılar
+users << User.create!(
+  name: "Sude", 
+  email: "sude@example.com",
+  password: "123456",
+  password_confirmation: "123456"
+)
+users << User.create!(
+  name: "Test User", 
+  email: "sudenur@example.com",
+  password: "123456",
+  password_confirmation: "123456"
+)
+
 puts "   ✓ #{User.count} kullanici olusturuldu"
 
 # 5 Kredi

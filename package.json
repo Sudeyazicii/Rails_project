@@ -1,0 +1,13 @@
+{
+  "name": "survey-frontend-tests",
+  "version": "1.0.0",
+  "description": "Survey Management Cypress Tests",
+  "type": "module",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "^15.5.0"
+  }
+}

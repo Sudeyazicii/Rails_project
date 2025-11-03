@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_10_20_195941) do
+ActiveRecord::Schema[8.0].define(version: 2025_10_31_125621) do
   create_table "credits", force: :cascade do |t|
     t.decimal "amount"
     t.integer "user_id", null: false
@@ -52,6 +52,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_10_20_195941) do
     t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "password_digest"
   end
 
   add_foreign_key "credits", "users"
