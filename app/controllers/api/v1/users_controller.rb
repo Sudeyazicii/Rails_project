@@ -11,11 +11,11 @@ class Api::V1::UsersController < ApplicationController
 
     if user.save
       token = JsonWebToken.encode(user_id: user.id)
-      render json: { 
-        id: user.id, 
-        name: user.name, 
+      render json: {
+        id: user.id,
+        name: user.name,
         email: user.email,
-        token: token 
+        token: token
       }, status: :created
     else
       render json: { errors: user.errors.full_messages }, status: :unprocessable_entity

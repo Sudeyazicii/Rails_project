@@ -11,10 +11,10 @@ end
 ############################################
 Given('sistemde bir kullanıcı mevcut:') do |table|
   data = table.hashes.first
-  
+
   # Önce var mı kontrol et, yoksa oluştur
   user = User.find_by(email: data["email"])
-  
+
   if user.nil?
     User.create!(
       name: data["name"],
@@ -56,7 +56,7 @@ end
 Given('a registered user exists with email {string}') do |email|
   # Önce var mı kontrol et, yoksa oluştur
   user = User.find_by(email: email)
-  
+
   if user.nil?
     User.create!(
       name: "Test User",
@@ -86,7 +86,7 @@ When('I send a POST request to {string} with:') do |path, table|
     email = table.rows_hash['email']
     User.find_by(email: email)&.destroy
   end
-  
+
   payload = { user: table.rows_hash }.to_json
 
   header "Content-Type", "application/json"

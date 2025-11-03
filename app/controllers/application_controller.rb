@@ -6,13 +6,13 @@ class ApplicationController < ActionController::API
   def authorize_request
     # Login endpoint'ini tamamen atla
     return if request.path == "/api/v1/login"
-    
+
     # User create endpoint'ini tamamen atla (public endpoint)
     return if request.path == "/api/v1/users" && request.post?
-    
+
     # Surveys endpoint'ini tamamen atla (public endpoint)
     return if request.path == "/api/v1/surveys" && request.get?
-    
+
     # Diğer API endpoint'lerinde JWT kontrolü yap
     if request.path.start_with?("/api/v1")
       header = request.headers["Authorization"]

@@ -54,10 +54,8 @@ group :test do
   gem "selenium-webdriver"
 end
 group :test do
-  gem 'rspec-expectations'
+  gem "rspec-expectations"
 end
 group :test do
-  gem 'rack-test'
+  gem "rack-test"
 end
-
-

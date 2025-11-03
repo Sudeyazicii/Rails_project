@@ -11,31 +11,31 @@ User.destroy_all
 puts "\n1. Kullanicilar olusturuluyor..."
 users = []
 users << User.create!(
-  name: "Ahmet Yilmaz", 
+  name: "Ahmet Yilmaz",
   email: "ahmet@test.com",
   password: "123456",
   password_confirmation: "123456"
 )
 users << User.create!(
-  name: "Ayse Demir", 
+  name: "Ayse Demir",
   email: "ayse@test.com",
   password: "123456",
   password_confirmation: "123456"
 )
 users << User.create!(
-  name: "Mehmet Kaya", 
+  name: "Mehmet Kaya",
   email: "mehmet@test.com",
   password: "123456",
   password_confirmation: "123456"
 )
 users << User.create!(
-  name: "Fatma Sahin", 
+  name: "Fatma Sahin",
   email: "fatma@test.com",
   password: "123456",
   password_confirmation: "123456"
 )
 users << User.create!(
-  name: "Ali Celik", 
+  name: "Ali Celik",
   email: "ali@test.com",
   password: "123456",
   password_confirmation: "123456"
@@ -43,13 +43,13 @@ users << User.create!(
 
 # Cucumber testleri için özel kullanıcılar
 users << User.create!(
-  name: "Sude", 
+  name: "Sude",
   email: "sude@example.com",
   password: "123456",
   password_confirmation: "123456"
 )
 users << User.create!(
-  name: "Test User", 
+  name: "Test User",
   email: "sudenur@example.com",
   password: "123456",
   password_confirmation: "123456"
