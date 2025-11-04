@@ -1,6 +1,6 @@
 # Rails_project - Survey Management System
 
-> **Not:** Bu proje **Nurettin Şenyer** ve **Ömer Durmuş** danışmanlığında geliştirilmiştir.
+> **Not:** Bu proje **Samsun Üniversitesi** bünyesinde**Dr. Öğr. Üyesi Nurettin Şenyer** ve **Arş. Gör. Ömer Durmuş** danışmanlığında geliştirilmiştir.
 
 > Ruby on Rails API with JWT authentication and BDD testing.
 
